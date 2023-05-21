@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* Orden para generar el archivo de estilos resultante */ /* Definicon de variables a utilizar en el proyecto */
+/* Bloque pilares */
+/* Bloque nav */
+/* Bloque footer */
+/* Definiciones de estilos dentro del diseño */
+.pilar {
+  text-align: center;
+  color: white;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.svg-pilar {
+  width: 2em;
+  height: 2em;
+}
+
+.nav-custom {
+  background-color: #197ABE;
+  color: white;
+}
+
+.pilar:nth-child(1), .pilar:nth-child(2), .pilar:nth-child(3) {
+  border-right: 1px solid white;
+}
+
+/* Caso: vistas con largo maximo de 768px */
+@media screen and (max-width: 768px) {
+  .pilar:nth-child(1), .pilar:nth-child(2), .pilar:nth-child(3) {
+    border-right: none;
+  }
+  .pilar {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+/* Estructura general del diseño */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: calc(100vh - 16px);
+}
+
+.layout__titulos {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.layout__footer {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #ddd;
+}
+
+.layout__pilares {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #02243D;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+/* Caso: vistas con largo maximo de 768px */
+@media screen and (max-width: 768px) {
+  .layout__pilares {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #02243D;
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

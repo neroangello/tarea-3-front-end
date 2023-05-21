@@ -1,0 +1,41 @@
+
+/* Definiciones de estilos dentro del diseño */ 
+
+.pilar{
+    text-align: center;    
+    color: $pilar-color-texto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.svg-pilar{
+    width: 2em;
+    height: 2em;
+}
+
+.nav-custom{
+    background-color: $nav-color-fondo;
+    color: $nav-color-texto;
+}
+
+
+.pilar:nth-child(1), .pilar:nth-child(2), .pilar:nth-child(3){
+    border-right: 1px solid $pilar-color-borde;
+}
+
+/* Caso: vistas con largo maximo de 768px */
+
+@media screen and (max-width: 768px) {
+
+    .pilar:nth-child(1), .pilar:nth-child(2), .pilar:nth-child(3){
+        border-right: none;
+    }
+
+    .pilar{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+}

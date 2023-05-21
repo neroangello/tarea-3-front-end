@@ -1,0 +1,50 @@
+
+/* Estructura general del diseño */
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: calc(100vh - 16px);
+}
+
+.layout__titulos{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.layout__footer{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: $footer-color-fondo;
+}
+
+.layout__pilares {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: $pilar-color-fondo;
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+}
+
+/* Caso: vistas con largo maximo de 768px */
+
+@media screen and (max-width: 768px) {
+
+    .layout__pilares {
+        display: grid;
+        grid-template-columns: auto ;
+        background-color: $pilar-color-fondo;
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+}
+
+
